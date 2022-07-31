@@ -121,8 +121,3 @@ class Lol:
         if playerId == None: playerId = self.id
         
         return self.requests.get(f"https://br1.api.riotgames.com/lol/league/v4/entries/by-summoner/{playerId}?api_key={self.__KEY}").json()
-
-
-# EXEMPLO
-jogador1 = Lol.player(KEY="SEU-TOKEN", name="kainhogameplays")
-print(jogador1.rank())
